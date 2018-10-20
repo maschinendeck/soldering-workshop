@@ -7,7 +7,7 @@
 
 \title[soldering-workshop] % (optional, only for long titles)
 {Lötworkshop für Anfänger}
-\author{Eileen, towa}
+\author{Eileen, towa, Andi}
 \usetheme{metropolis}
 
 \begin{document}
@@ -39,7 +39,7 @@
 	\begin{itemize}
 		%TODO: Bilder von Elektronischen Bauteilen und einer Platine
 		\item{Verbinden von elektronischen Bauteilen mit einer Platine (PCB)}
-		\item{Verwendung von Handlötkolben oder Lötstationen mit \unit[300-400]{$^\circ$C} und \unit[30-80]{W}}
+		\item{Verwendung von Handlötkolben oder Lötstationen mit \unit[300-400]{$^\circ$C} und \unit[30-100]{W}}
 		\item{Als Metallegierung wird Lot oder Lötzinn verwendet}
 	\end{itemize}
 	\end{frame}
@@ -47,9 +47,10 @@
 	\begin{frame}
 	\frametitle{Das Lot}
 	\begin{itemize}
-		\item{Metalllegierung aus Zinn, Blei und anderen Metallen}
+		\item{Metalllegierung aus Zinn, Blei und anderen Metallen (Elektroniklot)}
 		\item{Flußmittelseele zur Verbesserung der Flusseigenschaften im Lot enthalten}
-		\item{\textcolor{red}{Blei ist ein giftiges Schwermetall! Nicht am Lötplatz essen!}}
+		\item{\textcolor{red}{Beim Erhitzen des Lötzinns können Flussmittelspritzer auftreten. Deshalb nicht zu nahe mit dem Gesicht an die Lötstelle gehen!}}
+		\item{\textcolor{red}{Blei ist ein giftiges Schwermetall! Nicht verschlucken!}}
 	\end{itemize}
 	\begin{figure}[hbtp]
 		\centering
@@ -86,6 +87,7 @@
 
 	\begin{frame}
 	\frametitle{Lötvorgang}
+	% evt. vorher noch reinigen
 	\begin{columns}[T] % align columns
 		\begin{column}{.33\textwidth}
 			\textbf{Benetzen} \newline
@@ -118,7 +120,7 @@
 	\begin{itemize}
 		\item{Arbeitsplatz überprüfen: Lötkolben, Seitenschneider, Lötzinn, Schwamm, Bausatz vorhanden}
 		% TODO: Lötkolben vorheizen evt. am Anfang
-		\item{Lötkolben/Lötstation vorheizen (\unit[350]{$^\circ$C})}
+		\item{Lötkolben/Lötstation vorgeheizt (\unit[350]{$^\circ$C})}
 		\item{Bausatz auspacken und Teile überprüfen}
 	\end{itemize}
 	\begin{figure}[hbtp]
@@ -129,12 +131,74 @@
 	\end{frame}
 
 	\begin{frame}
-		\frametitle{Quellen für Lötzubehör}
+	\frametitle{Schritt 1: Löten der Widerstände}
+	Die Widerstände sind recht unempfindlich und sind perfekt geeignet für die ersten Lötstellen
+	\begin{enumerate} 
+		\item{Widerstände mithilfe der Biegehilfe passend biegen}
+		\item{Widerstände durch die entsprechenden Löcher in der Platine stecken}
+		\item{Anschlussdrähte auf der anderen Seite der Platine etwas auseinanderbiegen}
+		\item{Platine Umdrehen und Widerstände festlöten}
+	\end{enumerate}
+	\end{frame}
+
+	\begin{frame}
+	\frametitle{Schritt 2: Löten der LEDs}
+	LEDs sind empfindlich gegenüber großer Hitze. Sie sollten nicht unnötig lange erhitzt werden
+	\begin{enumerate} 
+		\item{LEDs durch die entsprechenden Löcher stecken (darauf achten, dass die abgeflachte Seite der LED mit dem Aufdruck auf der Platine übereinstimmt)}
+		\item{Anschlussdrähte etwas auseinander biegen}
+		\item{Platine Umdrehen und LEDs festlöten}
+	\end{enumerate}
+	\end{frame}
+
+	\begin{frame}
+	\frametitle{Schritt 3: Löten des Batteriehalters}
+	Der Batteriehalter wird auf der Oberfläche verlötet (SMD).
+	\begin{enumerate} 
+		\item{Batteriehalter richtig herum auf die Platinenunterseite legen}
+		\item{Etwas Lötzinn an die Lötspitze auftragen}
+		\item{Batteriehalter mit einer Hand festhalten und mit der anderen Hand eine Lötstelle festlöten}
+		\item{Andere Seite wie gewohnt festlöten}
+		\item{Nachdem die andere Seite gelötet ist, kann die erste Seite noch einmal nachgelötet werden}
+	\end{enumerate}
+	\end{frame}
+
+	\begin{frame}
+	\frametitle{Schritt 4: Löten der Anstecknadel}
+	Die Anstecknadel ist sehr groß und muss deshalb länger erhitzt werden.
+	\begin{enumerate} 
+		\item{Anstecknadel aufmachen und so herum auf das Pad legen, dass der Haken in den die Nadel eingehakt wird zum Batteriehalter zeigt}
+		\item{Anstecknadel erhitzen und viel Lötzinn auftragen}
+		\item{Sobald die Nadel gut benetzt ist, kann diese noch mit der Pinzette richtig ausgerichtet werden}
+	\end{enumerate}
+	\end{frame}
+
+	\begin{frame}
+	\frametitle{Schritt 5: Löten des Schalters}
+	\begin{enumerate} 
+		\item{Den Schalter von der Vorderseite durch die Platine stecken (Orientierung egal)}
+		\item{Platine auf den Schalter legen und diesen auf der Unterseite an einer Lötstelle verlöten}
+		\item{Falls der Schalter schief sitzt, kann er vorsichtig auf der Vorderseite gerade gedrückt werden während man die Lötstelle erneut erhitzt (Vorsicht: Verbrennungsgefahr)}
+		\item{Zum Schluss die restlichen Lötstellen verlöten}
+	\end{enumerate}
+	\end{frame}
+
+	\begin{frame}
+	\frametitle{Zum Schluss}
+	\begin{itemize} 
+		\item{Batterie einlegen und den Schalter auf "ON" stellen}
+		\item{Lötstationen ausschalten}
+		\item{Lötspitze nicht reinigen, da das verbleibende Lötzinn auf der Spitze eine Schutzschicht bildet}
+		\item{Die Platine kann optional noch mit Alkohol oder Isopropanol gereinigt werden}
+	\end{itemize}
+\end{frame}
+
+	\begin{frame}
+		\frametitle{Quellen für Lötzubehör und Bausätze}
 		\begin{itemize}
-			\item{ELV}
-			\item{Watteroth}
-			\item{Reichelt}
-			\item{Conrad}
+			\item{ELV (www.elv.de)}
+			\item{Watteroth (www.watterott.com)}
+			\item{Reichelt (www.reichelt.de)}
 		\end{itemize}
 	\end{frame}
 
