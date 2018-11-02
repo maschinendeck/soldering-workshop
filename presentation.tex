@@ -4,6 +4,8 @@
 \usepackage{textgreek}
 \usepackage{units}
 
+\usepackage[official]{eurosym}
+
 
 \title[soldering-workshop] % (optional, only for long titles)
 {Lötworkshop für Anfänger}
@@ -13,10 +15,14 @@
 \begin{document}
     \maketitle
     
+    
     \begin{frame}
     \frametitle{Inhalt}
     \begin{itemize}
-    	\item{Theorie}
+    	\item{Was bedeutet Löten?}
+    	\item{Benötigte Gegenstände}
+    	\item{Wie wird gelötet?}
+    	\item{Praxisteil: Löten der Maschinendeck Badge}
     \end{itemize}
 	\end{frame}
     
@@ -30,7 +36,6 @@
 	\begin{figure}[hbtp]
 		\centering
 		\includegraphics[width=\linewidth*2/3]{images/weich_hartloeten.png}
-		\caption{Quelle: ERSA Lötfibel}
 	\end{figure}
 	\end{frame}
 
@@ -39,7 +44,7 @@
 	\begin{itemize}
 		%TODO: Bilder von Elektronischen Bauteilen und einer Platine
 		\item{Verbinden von elektronischen Bauteilen mit einer Platine (PCB)}
-		\item{Verwendung von Handlötkolben oder Lötstationen mit \unit[300-400]{$^\circ$C} und \unit[30-100]{W}}
+		\item{Verwendung von Handlötkolben oder Lötstationen mit \unit[300 - 400]{$^\circ$C} und \unit[30 - 100]{W}}
 		\item{Als Metallegierung wird Lot oder Lötzinn verwendet}
 	\end{itemize}
 	\end{frame}
@@ -62,11 +67,11 @@
 	\begin{frame}
 	\frametitle{Was wird benötigt?}
 	\begin{itemize}
-		\item{Seitenschneider}
 		\item{Bausatz}
 		\item{Lötkolben}
 		\item{Lötzinn}
-		\item{Schwamm}
+		\item{Seitenschneider}
+		\item{Schwamm / Trockenreiniger}
 	\end{itemize}
 	\end{frame}
 
@@ -74,14 +79,13 @@
 	\frametitle{Optionales Zubehör}
 	\begin{itemize}
 		\item{Lötstation}
-		\item{Heißluftlötkolben}
-		\item{Lötpinzette}
-		
-		\item{Lötdampfabsaugung}
-		
 		\item{Pinzetten}
 		\item{Dritte Hand}
-		\item{Lupe}
+		\item{Lötdampfabsaugung}
+		\item{Lupe}		
+		
+		\item{Heißluftlötkolben}
+		\item{Lötpinzette}
 	\end{itemize}
 	\end{frame}
 
@@ -137,7 +141,7 @@
 		\item{Widerstände mithilfe der Biegehilfe passend biegen}
 		\item{Widerstände durch die entsprechenden Löcher in der Platine stecken}
 		\item{Anschlussdrähte auf der anderen Seite der Platine etwas auseinanderbiegen}
-		\item{Platine Umdrehen und Widerstände festlöten}
+		\item{Platine umdrehen und Widerstände festlöten}
 	\end{enumerate}
 	\end{frame}
 
@@ -167,7 +171,7 @@
 	\begin{enumerate} 
 		\item{Batteriehalter richtig herum auf die Platinenunterseite legen}
 		\item{Etwas Lötzinn an die Lötspitze auftragen}
-		\item{Batteriehalter mit einer Hand festhalten und mit der anderen Hand eine Lötstelle festlöten}
+		\item{Batteriehalter mit der Pinzette festhalten und mit der anderen Hand eine Lötstelle festlöten}
 		\item{Andere Seite wie gewohnt festlöten}
 		\item{Nachdem die andere Seite gelötet ist, kann die erste Seite noch einmal nachgelötet werden}
 	\end{enumerate}
@@ -182,7 +186,7 @@
 	\frametitle{Schritt 4: Löten der Anstecknadel}
 	Die Anstecknadel ist sehr groß und muss deshalb länger erhitzt werden.
 	\begin{enumerate} 
-		\item{Anstecknadel aufmachen und so herum auf das Pad legen, dass der Haken in den die Nadel eingehakt wird zum Batteriehalter zeigt}
+		\item{Anstecknadel aufmachen und auf das Pad legen}
 		\item{Anstecknadel erhitzen und viel Lötzinn auftragen}
 		\item{Sobald die Nadel gut benetzt ist, kann diese noch mit der Pinzette richtig ausgerichtet werden}
 	\end{enumerate}
@@ -225,6 +229,8 @@
 
 	\begin{frame}
 		\frametitle{Quellen für Lötzubehör und Bausätze}
+		Ein einfacher Lötkolben kostet unter 10\euro{}, brauchbare Stationen sind bereits für 40\euro{} zu haben!
+		
 		\begin{itemize}
 			\item{ELV (www.elv.de)}
 			\item{Watteroth (www.watterott.com)}
@@ -235,7 +241,7 @@
 	\begin{frame}
 	\frametitle{Vielen Dank}
 	\centering
-	Vielen dank für ihre Aufmerksamkeit!
+	{\LARGE Vielen Dank für Ihre Aufmerksamkeit!}
 	\end{frame}
     
 \end{document}
