@@ -1,1 +1,2 @@
 # soldering-workshop
+!()[finished.jpg]
