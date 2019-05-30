@@ -1,2 +1,2 @@
 # soldering-workshop
-!()[finished.jpg]
+![](finished.jpg)
