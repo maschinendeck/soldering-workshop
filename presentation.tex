@@ -9,7 +9,7 @@
 
 \title[soldering-workshop] % (optional, only for long titles)
 {Lötworkshop für Anfänger}
-\author{Andi, Peter, MikO}
+\author{Andi}
 \usetheme{metropolis}
 
 \begin{document}
@@ -25,32 +25,41 @@
     	\item{Praxisteil: Löten der Maschinendeck Badge}
     \end{itemize}
 	\end{frame}
-    
-    \begin{frame}
-    \frametitle{Was ist Löten?}
-    \begin{itemize}
-    	\item{Verbindung zweier Metalloberflächen mit einer Metalllegierung niedrigerer Schmelztemperatur}
-    \end{itemize}
-	% Bildquellen: https://qph.fs.quoracdn.net/main-qimg-9fcaa4b47839d57b306a2613972ada02.webp
-	% https://www.makerspaces.com/how-to-solder/
-	\begin{figure}[hbtp]
-		\centering
-		\includegraphics[width=\linewidth*2/3]{images/weich_hartloeten.png}
-	\end{figure}
-	\end{frame}
 
 	\begin{frame}
 	\frametitle{Elektroniklöten}
+	\begin{figure}[hbtp]
+		\centering
+		\includegraphics[width=\linewidth*2/3]{images/elektronikloeten.jpg}
+		\caption{Quelle: https://www.makerspaces.com/how-to-solder/}
+	\end{figure}
 	\begin{itemize}
-		%TODO: Bilder von Elektronischen Bauteilen und einer Platine
 		\item{Verbinden von elektronischen Bauteilen mit einer Platine (PCB)}
-		\item{Verwendung von Handlötkolben oder Lötstationen mit \unit[300 - 400]{$^\circ$C} und \unit[30 - 100]{W}}
-		\item{Als Metallegierung wird Lot oder Lötzinn verwendet}
+		\item{Verwendung von Handlötkolben oder Lötstationen mit \unit[300 - 450]{$^\circ$C} und \unit[30 - 100]{W}}
+		\item{Als Metalllegierung wird Lot oder Lötzinn verwendet}
 	\end{itemize}
 	\end{frame}
 
 	\begin{frame}
-	\frametitle{Das Lot}
+		\frametitle{Was wird benötigt?}
+		\begin{itemize}
+			\item{Bausatz}
+			\item{Lötkolben / Lötstation}
+			\item{Lötzinn}
+			\item{Seitenschneider}
+			\item{Schwamm / Trockenreiniger}
+		\end{itemize}
+		Optional:
+		\begin{itemize}
+			\item{Pinzette}
+			\item{Dritte Hand}
+			\item{Lötdampfabsaugung}
+			\item{Lupe}	
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+	\frametitle{Das Lötzinn}
 	\begin{itemize}
 		\item{Metalllegierung aus Zinn, Blei und anderen Metallen (Elektroniklot)}
 		\item{Flußmittelseele zur Verbesserung der Flusseigenschaften im Lot enthalten}
@@ -65,55 +74,17 @@
 	\end{frame}
 
 	\begin{frame}
-	\frametitle{Was wird benötigt?}
-	\begin{itemize}
-		\item{Bausatz}
-		\item{Lötkolben}
-		\item{Lötzinn}
-		\item{Seitenschneider}
-		\item{Schwamm / Trockenreiniger}
-	\end{itemize}
-	\end{frame}
-
-	\begin{frame}
-	\frametitle{Optionales Zubehör}
-	\begin{itemize}
-		\item{Lötstation / Heißluftlötkolben / Lötpinzette}
-		\item{Pinzetten}
-		\item{Dritte Hand}
-		\item{Lötdampfabsaugung}
-		\item{Lupe}	
-	\end{itemize}
-	\end{frame}
-
-	\begin{frame}
 	\frametitle{Lötvorgang}
-	% evt. vorher noch reinigen
-	\begin{columns}[T] % align columns
-		\begin{column}{.33\textwidth}
-			\textbf{Benetzen} \newline
-			Lötspitze reinigen und auf die gereinigte Lötspitze etwas Lot geben.
-		\end{column}%
-		\hfill%
-		\begin{column}{.33\textwidth}
-			\textbf{Fließen} \newline
-			Die Lötstelle erhitzen und soviel Lot dazu geben wie nötig.
-		\end{column}%
-		\begin{column}{.33\textwidth}
-			\textbf{Binden} \newline
-			Erst Lot, dann Spitze von Lötstelle entfernen und anschließen abkühlen lassen.
-		\end{column}%
-		\hfill%
-	\end{columns}
-	\end{frame}
-
-	\begin{frame}
-	\frametitle{Löten 101}
 	\begin{figure}[hbtp]
 		\centering
 		\includegraphics[width=\linewidth]{images/solder.png}
 		\caption{Quelle: Adafruit}
 	\end{figure}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Lötfehler}
+		%TODO: Bilder von lötfehlern einfügen
 	\end{frame}
 
 	\begin{frame}
@@ -128,17 +99,6 @@
 		\includegraphics[width=\linewidth*5/10]{images/badge.jpg}
 		\caption{Der Bausatz}
 	\end{figure}
-	\end{frame}
-
-	\begin{frame}
-	\frametitle{Schritt 1: Löten der Widerstände}
-	Die Widerstände sind recht unempfindlich und sind perfekt geeignet für die ersten Lötstellen
-	\begin{enumerate} 
-		\item{Widerstände mithilfe der Biegehilfe passend biegen}
-		\item{Widerstände durch die entsprechenden Löcher in der Platine stecken}
-		\item{Anschlussdrähte auf der anderen Seite der Platine etwas auseinanderbiegen}
-		\item{Platine umdrehen und Widerstände festlöten}
-	\end{enumerate}
 	\end{frame}
 
 	\begin{frame}
