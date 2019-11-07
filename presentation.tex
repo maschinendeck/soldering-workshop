@@ -9,12 +9,11 @@
 
 \title[soldering-workshop] % (optional, only for long titles)
 {Lötworkshop für Anfänger}
-\author{Andi}
+%\subtitle{Löten lernen mit der Maschinendeck Badge}
 \usetheme{metropolis}
 
 \begin{document}
     \maketitle
-    
     
     \begin{frame}
     \frametitle{Inhalt}
@@ -23,6 +22,7 @@
     	\item{Benötigte Gegenstände}
     	\item{Wie wird gelötet?}
     	\item{Praxisteil: Löten der Maschinendeck Badge}
+    	\item{Links}
     \end{itemize}
 	\end{frame}
 
@@ -44,6 +44,7 @@
 		\frametitle{Was wird benötigt?}
 		\begin{itemize}
 			\item{Bausatz}
+			\item{Schutzbrille}
 			\item{Lötkolben / Lötstation}
 			\item{Lötzinn}
 			\item{Seitenschneider}
@@ -184,17 +185,33 @@
 	\end{frame}
 
 	\begin{frame}
-		\frametitle{Quellen für Lötzubehör und Bausätze}
-		\large Präsentation: https://github.com/maschinendeck/soldering-workshop
+		\frametitle{Links}
+		%TODO: alignment fixen
+		\begin{columns}[] % align columns
+			\begin{column}{.5\textwidth}
+				\large Präsentation: \normalsize \\
+				\vspace{5mm}
+				https://github.com/maschinendeck/
+				soldering-workshop
+			\end{column}
+			\begin{column}{.5\textwidth}
+				\begin{center}
+					\includegraphics[width=0.6\textwidth]{images/qr-code.png}      
+				\end{center}
+			\end{column}
+		\end{columns}
 		
-		\vspace{5mm}
-		
-		Lötzubehör:
+		\large
+		Empfohlene Startausrüstung:
+		\normalsize
 		\begin{itemize}
-			\item{ELV (www.elv.de)}
-			\item{Watteroth (www.watterott.com)}
-			\item{Reichelt (www.reichelt.de)}
+			%TODO: alles hinter dem doppelpunkt auf einer höhe (tab)
+			\item Lötkolben: 	TS100 + Halter + passendes Netzteil
+			\item Lötzinn: 		Felder IsoCore Clear Sn96,5Ag3Cu0,5 \textbf{0.5mm}
+			\item Schwamm: 		Trockenreiniger aus Messingwolle
+			\item Bausätze: 	ELV, Watteroth, Reichelt, Ebay
 		\end{itemize}
+		
 	\end{frame}
 
 	\begin{frame}
