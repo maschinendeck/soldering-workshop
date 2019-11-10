@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -442,9 +443,9 @@ type 0207, grid 10 mm</description>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SW1" library="badge" deviceset="SWITCH" device=""/>
 <part name="X1" library="badge" deviceset="BATTERYHOLDER_SMD" device=""/>
-<part name="R1" library="badge" deviceset="RESISTOR_207" device="" value="4.7"/>
-<part name="R2" library="badge" deviceset="RESISTOR_207" device="" value="4.7"/>
-<part name="R3" library="badge" deviceset="RESISTOR_207" device="" value="4.7"/>
+<part name="R1" library="badge" deviceset="RESISTOR_207" device="" value="100R"/>
+<part name="R2" library="badge" deviceset="RESISTOR_207" device="" value="100R"/>
+<part name="R3" library="badge" deviceset="RESISTOR_207" device="" value="100R"/>
 <part name="LED1" library="badge" deviceset="LED" device="" value="LED"/>
 <part name="LED2" library="badge" deviceset="LED" device="" value="LED"/>
 <part name="LED3" library="badge" deviceset="LED" device="" value="LED"/>
@@ -457,17 +458,45 @@ type 0207, grid 10 mm</description>
 <text x="87.63" y="20.32" size="2.54" layer="94">LED Badge</text>
 </plain>
 <instances>
-<instance part="GND1" gate="1" x="101.6" y="60.96"/>
-<instance part="GND2" gate="1" x="38.1" y="60.96"/>
-<instance part="SW1" gate="G$1" x="58.42" y="99.06"/>
-<instance part="X1" gate="G$1" x="38.1" y="88.9" rot="R270"/>
-<instance part="R1" gate="G$1" x="83.82" y="99.06"/>
-<instance part="R2" gate="G$1" x="83.82" y="86.36"/>
-<instance part="R3" gate="G$1" x="83.82" y="73.66"/>
-<instance part="LED1" gate="G$1" x="93.98" y="99.06" rot="R90"/>
-<instance part="LED2" gate="G$1" x="93.98" y="86.36" rot="R90"/>
-<instance part="LED3" gate="G$1" x="93.98" y="73.66" rot="R90"/>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="GND1" gate="1" x="101.6" y="60.96" smashed="yes">
+<attribute name="VALUE" x="99.06" y="58.42" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="1" x="38.1" y="60.96" smashed="yes">
+<attribute name="VALUE" x="35.56" y="58.42" size="1.778" layer="96"/>
+</instance>
+<instance part="SW1" gate="G$1" x="58.42" y="99.06" smashed="yes">
+<attribute name="NAME" x="53.34" y="104.14" size="1.778" layer="95"/>
+</instance>
+<instance part="X1" gate="G$1" x="38.1" y="88.9" smashed="yes" rot="R270"/>
+<instance part="R1" gate="G$1" x="83.82" y="99.06" smashed="yes">
+<attribute name="NAME" x="80.01" y="100.5586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="80.01" y="95.758" size="1.778" layer="96"/>
+</instance>
+<instance part="R2" gate="G$1" x="83.82" y="86.36" smashed="yes">
+<attribute name="NAME" x="80.01" y="87.8586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="80.01" y="83.058" size="1.778" layer="96"/>
+</instance>
+<instance part="R3" gate="G$1" x="83.82" y="73.66" smashed="yes">
+<attribute name="NAME" x="80.01" y="75.1586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="80.01" y="70.358" size="1.778" layer="96"/>
+</instance>
+<instance part="LED1" gate="G$1" x="93.98" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="98.552" y="102.616" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="98.552" y="104.775" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="LED2" gate="G$1" x="93.98" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="98.552" y="89.916" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="98.552" y="92.075" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="LED3" gate="G$1" x="93.98" y="73.66" smashed="yes" rot="R90">
+<attribute name="NAME" x="98.552" y="77.216" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="98.552" y="79.375" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="87.63" y="15.367" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="87.63" y="10.287" size="2.286" layer="94"/>
+<attribute name="SHEET" x="100.965" y="5.207" size="2.54" layer="94"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -544,7 +573,9 @@ type 0207, grid 10 mm</description>
 <plain>
 </plain>
 <instances>
-<instance part="NEEDLE" gate="G$1" x="15.24" y="15.24"/>
+<instance part="NEEDLE" gate="G$1" x="15.24" y="15.24" smashed="yes">
+<attribute name="NAME" x="7.62" y="18.288" size="1.778" layer="95" font="vector" ratio="10"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -556,7 +587,7 @@ type 0207, grid 10 mm</description>
 </drawing>
 <compatibility>
 <note version="8.2" severity="warning">
-Since Version 8.2, Eagle supports online libraries. The ids
+Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
 </note>
