@@ -80,11 +80,12 @@
 		\centering
 		\includegraphics[width=\linewidth]{images/solder.png}
 		\caption{Quelle: Adafruit}
+		% TODO: Beinchen abschneiden
 	\end{figure}
 	\end{frame}
 
 	\begin{frame}
-		\frametitle{Lötfehler}
+		\frametitle{Lötvorgang}
 		%TODO: Bilder von lötfehlern einfügen
 	\end{frame}
 
@@ -102,86 +103,73 @@
 	\end{figure}
 	\end{frame}
 
+	%\begin{frame}
+	%	\frametitle{Praxisteil: Löten der Badge}
+	%	 \begin{tabular}{p{\textwidth/3}p{\textwidth/3}p{\textwidth/3}}
+	%		\centering 1.
+	%		\includegraphics[width=\linewidth]{images/step1.png} & 2. & 3. \\
+	%		4. & 5. & 6.
+	%	\end{tabular}
+	%\end{frame}
+
 	\begin{frame}
 		\frametitle{Schritt 1: Löten der Widerstände}
-		\includegraphics[width=\linewidth]{images/badge18/resistor.JPG}
+		\centering \includegraphics[width=.6\linewidth]{images/step1.png}
+		\begin{itemize}
+			\item Beinchen der LEDs im richtigen Abstand umbiegen (Biegehilfe)
+			\item Durch die Platine stecken und Beinchen auf der Rückseite ein wenig (!) auseinanderbiegen 
+			\item Alle LEDs auf der Rückseite verlöten und Beinchen abschneiden			
+		\end{itemize}		
 	\end{frame}
 	
 	\begin{frame}
-	\frametitle{Schritt 2: Löten der LEDs}
-	LEDs sind empfindlich gegenüber großer Hitze. Sie sollten nicht unnötig lange erhitzt werden
-	\begin{enumerate} 
-		\item{LEDs durch die entsprechenden Löcher stecken (darauf achten, dass die abgeflachte Seite der LED mit dem Aufdruck auf der Platine übereinstimmt)}
-		\item{Anschlussdrähte etwas auseinander biegen}
-		\item{Platine Umdrehen und LEDs festlöten}
-	\end{enumerate}
-	\end{frame}
-
-	\begin{frame}
 		\frametitle{Schritt 2: Löten der LEDs}
-		\includegraphics[width=\linewidth]{images/badge18/ledPolarity.JPG}
-	\end{frame}
-
-	\begin{frame}
-	\frametitle{Schritt 3: Löten des Batteriehalters}
-	Der Batteriehalter wird auf der Oberfläche verlötet (SMD).
-	\begin{enumerate} 
-		\item{Batteriehalter richtig herum auf die Platinenunterseite legen}
-		\item{Etwas Lötzinn an die Lötspitze auftragen}
-		\item{Batteriehalter mit der Pinzette festhalten und mit der anderen Hand eine Lötstelle festlöten}
-		\item{Andere Seite wie gewohnt festlöten}
-		\item{Nachdem die andere Seite gelötet ist, kann die erste Seite noch einmal nachgelötet werden}
-	\end{enumerate}
+		\centering \includegraphics[width=.6\linewidth]{images/step2.png}
+		\begin{itemize}
+			\item \textbf{Auf richtige Einbaurichtung achten!} Abgeflachte Seite entsprechend dem Symbol auf der Platine
+			\item LEDs sind hitzeempfindlicher als Widerstände, deshalb versuchen schnell zu Löten
+			\item Alle LEDs auf der Rückseite verlöten und Beinchen abschneiden			
+		\end{itemize}
 	\end{frame}
 
 	\begin{frame}
 		\frametitle{Schritt 3: Löten des Batteriehalters}
-		\includegraphics[width=\linewidth]{images/badge18/battHolderInPlace.JPG}
-	\end{frame}
-
-	\begin{frame}
-	\frametitle{Schritt 4: Löten der Anstecknadel}
-	Die Anstecknadel ist sehr groß und muss deshalb länger erhitzt werden.
-	\begin{enumerate} 
-		\item{Anstecknadel aufmachen und auf das Pad legen}
-		\item{Anstecknadel erhitzen und viel Lötzinn auftragen}
-		\item{Sobald die Nadel gut benetzt ist, kann diese noch mit der Pinzette richtig ausgerichtet werden}
-	\end{enumerate}
+		\centering \includegraphics[width=.4\linewidth]{images/step3.png}
+		\begin{itemize}
+			\item \textbf{Auf richtige Einbaurichtung achten!} Abgeschrägte Seite oben rechts auf der Unterseite
+			\item Lötzinn auf Spitze auftragen, Halter mit Pinzette festhalten und zunächst eine Seite festlöten
+			\item Danach die andere Seite fest löten und erste Seite evt. nachlöten
+		\end{itemize}
 	\end{frame}
 
 	\begin{frame}
 		\frametitle{Schritt 4: Löten der Anstecknadel}
-		\includegraphics[width=\linewidth]{images/badge18/needleAndHolder.JPG}
-	\end{frame}
-
-	\begin{frame}
-	\frametitle{Schritt 5: Löten des Schalters}
-	\begin{enumerate} 
-		\item{Den Schalter von der Vorderseite durch die Platine stecken (Orientierung egal)}
-		\item{Platine auf den Schalter legen und diesen auf der Unterseite an einer Lötstelle verlöten}
-		\item{Falls der Schalter schief sitzt, kann er vorsichtig auf der Vorderseite gerade gedrückt werden während man die Lötstelle erneut erhitzt (Vorsicht: Verbrennungsgefahr)}
-		\item{Zum Schluss die restlichen Lötstellen verlöten}
-	\end{enumerate}
+		%TODO: Bild mit offener anstecknadel + gelöteter batteriehalter
+		\centering \includegraphics[width=.4\linewidth]{images/step4.png}
+		\begin{itemize} 
+			\item{Anstecknadel vorher öffnen (vorsicht spitz!) und auf Platine legen}
+			\item{Viel Lötzinn und Pinzette zum Festhalten benutzen}
+		\end{itemize}
 	\end{frame}
 
 	\begin{frame}
 		\frametitle{Schritt 5: Löten des Schalters}
-		\includegraphics[width=\linewidth]{images/badge18/final.JPG}
+		\centering \includegraphics[width=.4\linewidth]{images/step5.png}
+		\begin{itemize} 
+			\item{Den Schalter von der Vorderseite durch die Platine stecken (Orientierung egal)}
+			\item{Zuerst eine Lötstelle löten, dann kann der Schalter noch einmal richtig ausgerichtet werden wenn man diese wieder erhitzt}
+		\end{itemize}
 	\end{frame}
 
 	\begin{frame}
-	\frametitle{Zum Schluss}
-	\begin{itemize} 
-		\item{Batterie einlegen und den Schalter auf ``ON'' stellen}
-		\item{Lötstationen ausschalten}
-		\item{Lötspitze nicht reinigen, da das verbleibende Lötzinn auf der Spitze eine Schutzschicht bildet}
-		\item{Die Platine kann optional noch mit Alkohol oder Isopropanol gereinigt werden}
-	\end{itemize}
-	\end{frame}
-
-	\begin{frame}
-		\frametitle{Zum Schluss}
-		\includegraphics[width=\linewidth]{images/badge18/battHolderWithBattery.JPG}
+		\frametitle{Schritt 6: Batterie einlegen und ausprobieren}
+		\centering \includegraphics[width=.4\linewidth]{images/step6.png}
+		\begin{itemize} 
+			\item{Batterie einlegen und den Schalter auf ``ON'' stellen}
+			\item{Lötstation ausschalten}
+			\item{Lötspitze nicht reinigen, da das verbleibende Lötzinn auf der Spitze eine Schutzschicht bildet}
+			\item{Optional: Reinigung der Platine mit Spiritus / Isopropanol / Aceton}
+		\end{itemize}
 	\end{frame}
 
 	\begin{frame}
